@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnySteak</title>
+  <style>
+    :root {
+      --cream: #f7f5e9;
+      --deep-blue: #2f5873;
+      --champagne-gold: #d8b76a;
+      --champagne-gold-dark: #c8a252;
+      --text-dark: #111111;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #fbfaf1 0%, var(--cream) 62%, #efecd9 100%);
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-dark);
+    }
+
+    main {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .brand-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 28px;
+    }
+
+    .description {
+      max-width: 560px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(15px, 2vw, 18px);
+      line-height: 1.7;
+      color: rgba(17, 17, 17, 0.72);
+      margin-top: -8px;
+    }
+
+    .logo {
+      width: min(420px, 82vw);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 18px 30px rgba(47, 88, 115, 0.08));
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 210px;
+      padding: 15px 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ead28f 0%, var(--champagne-gold) 45%, #b9903f 100%);
+      color: #111111;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: 0 16px 36px rgba(120, 93, 35, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 42px rgba(120, 93, 35, 0.3);
+      filter: saturate(1.08);
+    }
+
+    .cta-button:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="brand-card" aria-label="AnySteak landing page">
+     
+      <img class="logo" src="Anysteaklogot.png" alt="AnySteak logo" />
+
+      <p class="description">
+        AnySteak is a drop based steak program giving members access to premium cuts at wholesale-style pricing. Reserve from limited drops, skip retail markups, and get quality steaks sourced for people who want better meat without paying a 100% markup.
+      </p>
+
+      <a class="cta-button" href="https://anythingwagyu.com" target="_blank" rel="noopener noreferrer">
+        Get Your Steak
+      </a>
+    </section>
+  </main>
+</body>
+</html>
